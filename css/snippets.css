@@ -10,14 +10,15 @@
   max-width: 609px;
   margin: 1rem 0;
   background-color: #fff;
-  border: 1px solid #282c3452;
   border-radius: 5px;
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
 }
 
 .snip .text {
   padding: 1rem;
-  padding-bottom: 0;
+  border: 1px solid #282c3452;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .snip h2 {
@@ -25,7 +26,6 @@
 }
 
 .snip p {
-  margin-bottom: 1rem;
   color: rgba(0, 0, 0, 0.75);
 }
 
