@@ -5,11 +5,12 @@ import search from './lib/search.js';
 renderSnips(SNIPS);
 
 const searchForm = document.getElementById('search-bar');
-const searchText = document.getElementById('search-text');
+// const searchText = document.getElementById('search-text');
 
 searchForm.addEventListener('submit', event => {
   event.preventDefault();
-  search(searchText.value);
+  const searchText = event.target['search-text'].value;
+  search(searchText);
 });
 
 hljs.initHighlightingOnLoad();
