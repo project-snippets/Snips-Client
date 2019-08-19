@@ -4,11 +4,13 @@ import search from './lib/search.js';
 
 renderSnips(SNIPS);
 
-const searchForm = document.getElementById('search-bar');
-// const searchText = document.getElementById('search-text');
+document.getElementById('search-bar').addEventListener('submit', search);
 
-searchForm.addEventListener('submit', event => {
-  event.preventDefault();
-  const searchText = event.target['search-text'].value;
-  search(searchText);
-});
+// const searchForm = document.getElementById('search-bar');
+// // const searchText = document.getElementById('search-text');
+
+// searchForm.addEventListener('submit', event => {
+//   event.preventDefault();
+//   const searchText = event.target['search-text'].value;
+//   search(searchText);
+// });
