@@ -1,4 +1,4 @@
 # Snips Client
 
 ## Snippets Front-End
-- Use Live Server to run
+Use Live Server to run
