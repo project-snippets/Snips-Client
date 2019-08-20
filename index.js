@@ -1,8 +1,10 @@
 import SNIPS from './snippet-data.js';
-import { renderSnips, highlightSnips } from './lib/snippets.js';
-import search from './lib/search.js';
+import { renderSnips, fetchSnippets } from './lib/snippets.js';
+import { search } from './lib/search.js';
 
-renderSnips(SNIPS);
+fetchSnippets().then(snips => {
+  renderSnips(snips);
+});
 
 document.getElementById('search-bar').addEventListener('submit', search);
 
