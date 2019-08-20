@@ -1,6 +1,12 @@
-import SNIPS from './snippet-data.js';
 import { renderSnips, fetchSnippets } from './lib/snippets.js';
 import { search } from './lib/search.js';
+
+// async function init() {
+//   const snippets = await fetchSnippets();
+//   renderSnips(snippets);
+// }
+
+// init();
 
 fetchSnippets().then(snips => {
   renderSnips(snips);
