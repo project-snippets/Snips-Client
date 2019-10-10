@@ -2,7 +2,7 @@
 
 @import 'resets.css';
 @import 'palette.css';
-@import 'header.css';
+@import 'navigation.css';
 @import 'hero.css';
 @import 'search.css';
 @import 'snippets.css';
@@ -13,4 +13,47 @@ html {
 
 body {
   background-color: #ebebec;
+}
+
+.info-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+}
+
+.info-block:nth-child(2n) {
+  background-color: var(--snips-grey);
+}
+
+.info-block:nth-child(2n + 1) {
+  background-color: var(--snips-white);
+}
+
+.info-block img {
+  max-width: 100%;
+}
+
+.info-block p {
+  padding: 0 5rem;
+  font-size: 20px;
+  line-height: 2.2rem;
+}
+
+#competitors {
+  background-color: blueviolet;
+}
+
+#competitors h2 {
+  padding: 2rem;
+  text-align: center;
+}
+
+#competitors img {
+  height: 80%;
+  width: 85%;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
 }
